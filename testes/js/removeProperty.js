@@ -6,5 +6,10 @@
 // em todos os outros casos, retorna falso.
 
 function removeProperty(obj, prop) {
-  return null;
+  if(obj[prop] !== undefined){
+    delete obj.prop;
+    return true;
+  }else{
+    return false;
+  }
 }

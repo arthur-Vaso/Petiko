@@ -29,6 +29,13 @@
 
 function setup () {
   // Write your code here.
+  var image = document.getElementsByClassName("remove");
+  
+  for (let i = 0; i < image.length; i++) {
+    image[i].addEventListener('click', function (event){
+      event.preventDefault();
+      event.target.closest('div.image').remove();
+    }
 }
 
 // Example case. 
