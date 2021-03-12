@@ -35,7 +35,8 @@ function setup () {
     image[i].addEventListener('click', function (event){
       event.preventDefault();
       event.target.closest('div.image').remove();
-    }
+    });
+  }
 }
 
 // Example case. 
